@@ -94,7 +94,7 @@
 
       computerMovement();
     ballx = ballx + ballspeedx;
-    if (ballx > canvas.width){
+    if (ballx > canvas.width-paddleThick){
       if(bally > paddle2y && bally < paddle2y+paddleHeight){
         ballspeedx = -ballspeedx;
 
@@ -107,7 +107,7 @@
         ballReset();
       }
     }
-    if(ballx < 0){
+    if(ballx < 0+paddleThick){
       if(bally > paddle1y && bally < paddle1y+paddleHeight){
         ballspeedx = -ballspeedx;
 
