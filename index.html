@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>PONG GAME</title>
+    <link rel="stylesheet" href="pong.css">
   </head>
   <body>
+    <h1>PONG</h1>
   <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <footer>Coded by Aj Tafoya</footer>
   </body>
   <script type="text/javascript">
   var canvas;
@@ -133,7 +136,7 @@
     }
     function drawEverything(){
 
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'purple';
         ctx.fillText('Click here to continue', 350,500);
         if(showingWin){
           if (player1Score === winningScore) {
