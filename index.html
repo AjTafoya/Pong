@@ -20,6 +20,7 @@
   var paddle1y = 250;
   var paddle2y = 250;
   const paddleHeight = 100;
+
   const winningScore = 5;
   var showingWin = false;
 
@@ -58,7 +59,7 @@
   //listening for mousemove
     canvas.addEventListener('mousemove',function(evt){
       var mousePos = calculateMousePos(evt);
-      paddle1y = mousePos.y-(paddleHeight/2);
+      paddle2y = mousePos.y-(paddleHeight/2);
     });
 
     }
